@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<BorlandProject>
-	<Transactions>
-    <Transaction>2020.03.17 19:44:44.352.pas,C:\Users\Admin\Documents\RAD Studio\Projects\Unit1.pas=C:\KonV\PrCOVID\UnCOVID.pas</Transaction>
-    <Transaction>2020.03.17 19:44:44.360.dfm,C:\Users\Admin\Documents\RAD Studio\Projects\Unit1.dfm=C:\KonV\PrCOVID\UnCOVID.dfm</Transaction>
-    <Transaction>2020.03.17 19:45:06.150.dproj,C:\Users\Admin\Documents\RAD Studio\Projects\Project1.dproj=C:\KonV\PrCOVID\PrCOVID.dproj</Transaction>
-  </Transactions>
-</BorlandProject>
