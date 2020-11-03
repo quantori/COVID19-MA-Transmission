@@ -1,0 +1,36 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{6CA64F4D-ED6C-42E9-A3E2-C19BF3F24D53}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="..\PrCovidUA\PrCOVID.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="PrCOVID">
+			<MSBuild Projects="..\PrCovidUA\PrCOVID.dproj"/>
+		</Target>
+		<Target Name="PrCOVID:Clean">
+			<MSBuild Targets="Clean" Projects="..\PrCovidUA\PrCOVID.dproj"/>
+		</Target>
+		<Target Name="PrCOVID:Make">
+			<MSBuild Targets="Make" Projects="..\PrCovidUA\PrCOVID.dproj"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="PrCOVID"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="PrCOVID:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="PrCOVID:Make"/>
+		</Target>
+		<Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+	</Project>
